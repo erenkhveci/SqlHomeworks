@@ -37,3 +37,9 @@ select count(*) from film  where title Like 'T%' and rating = 'G';
 select count(*) from country where country like '_____';
 
 select count(*) from city where city ilike '%R';
+
+select * from film where title LIKE '%n' limit 5;
+
+select * from film where title LIKE '%n' Offset 5 limit 5;
+
+select * from customer where store_id=1  Order by last_name DESC;

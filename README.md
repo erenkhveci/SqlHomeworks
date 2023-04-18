@@ -65,4 +65,31 @@ select store_id, count(*) from customer group by store_id;
 select country_id, Count(city) from city group by country_id
 Order By count DESC
 Limit 1;
+#### Sekizinci Ödev
+Create Table employee(
+ id INTEGER 
+	name VARCHAR(50)
+	birthday DATE
+	email VARCHAR()
+)
 
+
+
+
+update employee 
+set id= 5 where email='@ekeke.com'
+
+
+update employee 
+set name= 'kamiil' where email='@ekeke.com'
+
+
+update employee 
+set birthday= '1980-6-30'  where email='@ekeke.com'
+
+update employee 
+set email= 'ekeke_-@ccc.com' where name='alalalal'
+
+
+delete <table-name> where <one field from table>
+delete employee where name = 'Eren';

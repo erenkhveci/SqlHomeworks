@@ -37,9 +37,17 @@ select count(*) from film  where title Like 'T%' and rating = 'G';
 select count(*) from country where country like '_____';
 
 select count(*) from city where city ilike '%R';
-
+#### Dördüncü ödev
 select * from film where title LIKE '%n' limit 5;
 
 select * from film where title LIKE '%n' Offset 5 limit 5;
 
 select * from customer where store_id=1  Order by last_name DESC;
+#### Beşinci ödev
+select round(avg(rental_rate),4) from film;
+
+select count(*) from film where title Like('C%');
+
+select Max(length) from film where rental_rate IN(0.99);
+
+select count(distinct(replacement_cost)) from film where length>150;

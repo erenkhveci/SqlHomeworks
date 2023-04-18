@@ -51,3 +51,18 @@ select count(*) from film where title Like('C%');
 select Max(length) from film where rental_rate IN(0.99);
 
 select count(distinct(replacement_cost)) from film where length>150;
+
+
+#### Yedinci Ödev
+
+select rating from film group by rating;
+
+select replacement_cost,count(*) from film group by replacement_cost
+having count(*)>50;
+
+select store_id, count(*) from customer group by store_id;
+
+select country_id, Count(city) from city group by country_id
+Order By count DESC
+Limit 1;
+

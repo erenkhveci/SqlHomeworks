@@ -93,3 +93,12 @@ set email= 'ekeke_-@ccc.com' where name='alalalal'
 
 delete <table-name> where <one field from table>
 delete employee where name = 'Eren';
+	
+#### Dokuzuncu Ödev
+
+select city,country from city  INNER join country ON city.country_id=country.country_id ;
+	
+select payment_id ,first_name ,last_name  from customer Inner join payment on payment.customer_id=customer.customer_id;
+	
+select rental_id,first_name,last_name from customer Inner join rental on customer.customer_id=rental.customer_id;	
+	

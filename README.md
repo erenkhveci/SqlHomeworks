@@ -102,3 +102,41 @@ select payment_id ,first_name ,last_name  from customer Inner join payment on pa
 	
 select rental_id,first_name,last_name from customer Inner join rental on customer.customer_id=rental.customer_id;	
 	
+	
+#### On ikinci Ödev
+	
+select count(*) from film
+where length>
+(
+select avg(length) from film
+)
+	
+	---
+	
+select count(*) from film
+where length = 
+(
+select max(length) from film
+)
+	
+---
+
+select * from film
+where rental_rate = 
+(
+select min(rental_rate) from film
+)
+and
+replacement_cost=
+(
+select min(replacement_cost) from film
+)
+	
+	---
+	
+
+ select * from payment 
+ inner join customer on payment.customer_id=customer.customer_id
+ order by amount DESC
+ 	
+	
